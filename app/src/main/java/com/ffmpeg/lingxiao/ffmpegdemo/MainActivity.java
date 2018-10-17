@@ -1,5 +1,6 @@
 package com.ffmpeg.lingxiao.ffmpegdemo;
 
+
 import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Intent intent = getIntent();
         mPath = intent.getStringExtra("path");
-        // Example of a call to a native method
         mSurfaceView = findViewById(R.id.surfaceView);
         mHolder = mSurfaceView.getHolder();
         mHolder.addCallback(new SurfaceCallback());
